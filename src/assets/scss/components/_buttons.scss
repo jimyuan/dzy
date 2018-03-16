@@ -1,0 +1,101 @@
+@charset 'utf-8';
+
+.el-button {
+  @include size(110px, 42px);
+  border-radius: 5px;
+  transition-duration: 0.3s;
+}
+// 标准按钮：
+
+// 灰色普通按钮
+.btn-default {
+  @include btn-define(#ccc, #fff, #777, #adadad, #e6e6e6, #444);
+}
+// 紫边按钮
+.btn-sure {
+  @include btn-define(#4c00b2, #fff, #4c00b2, #4c00b2, #4c00b2,  #fff);
+}
+// hover 橘边按钮
+.btn-light {
+  @include btn-define(#ccc, #fff, #777, #fed492, #fffaf3, #f17913);
+  font-weight: bold;
+}
+// 橘色按钮
+.btn-highlight {
+  @include btn-define(#fd9800, #fd9800, #fff, #fdac32, #fdac32, #fff);
+}
+// hover 蓝色按钮
+.btn-query {
+  @include btn-define(#ccc, #fff, #777, #45b1df, #e5f5fb, #337AB7);
+}
+// 灰色实心按钮
+.btn-solid {
+  @include btn-define(#e6e6e6, #e6e6e6, #444, #f7f7f7, #f7f7f7, #444);
+}
+// 紫色实心按钮
+.btn-solid-sure {
+  @include btn-define(#4c00b2, #4c00b2, #fff,#661acc, #661acc, #fff);
+}
+
+// 大尺寸按钮
+.btn-lg {
+  @include size(260px, 54px);
+  font-size: 18px;
+}
+
+// 小尺寸按钮
+.btn-sm {
+  @include size(100px, 38px);
+}
+
+// 微尺寸按钮
+.btn-mini {
+  @include size(50px, 26px);
+  font-size: 12px;
+  padding: 0;
+  border-radius: 4px;
+}
+
+// 圆角按钮
+.btn-round {
+  @include size(auto, 32px);
+  @include btn-define(#e4e4e4, #fff, #b3b3b3, #ff9100, #ff9100, #fff);
+
+  border-radius: 16px;
+  padding: 8px 15px;
+}
+
+.btn-round-sm {
+  @include size(auto, 30px);
+  @include btn-define(#e4e4e4, #fff, #337ab7, #e4e4e4, #eee, #23527c);
+
+  border-radius: 15px;
+  padding: 8px 15px;
+  font-size: 12px;
+}
+
+// X 图标按钮
+.btn-close {
+  @include size(40px);
+
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  color: #acb4bc;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    color: #6b7179;
+  }
+}
+
+.btn-close-solid {
+  background-color: #808080;
+  color: #f0f0f0;
+
+  &:hover {
+    color: #9ca3ac;
+  }
+}

@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+$font-family: 'Microsoft YaHei', 'Helvetica Neue', Helvetica, 'PingFang SC', 'Hiragino Sans GB', Arial, sans-serif;
+
+
+// 正文颜色
+$font-color: #777;
+// 标题颜色
+$title-color: #444;
+// 文字链接
+$link-color: #337ab7;
+
+// z-index 动态调整
+// 例如：z-index: z('default');
+$z-layers:(
+  'default': 1
+);

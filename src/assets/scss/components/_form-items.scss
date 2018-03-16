@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+.dzy-input .el-input__inner {
+  height: 28px;
+  border-color: #ccc;
+  border-radius: 0;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #444;
+
+  &:focus {
+    border-color: #45b1df;
+  }
+}
+
+.dzy-input-light .el-input__inner {
+  border-color: #fdcf93;
+
+  &:focus {
+    border-color: #fdcf93;
+  }
+}
+
+.dzy-input-scale .el-input__inner {
+  height: 24px;
+}
+
+.dzy-input.is-disabled .el-input__inner {
+  color: #ccc;
+  border-color: currentcolor;
+  background-color: #f9f9f9;
+}

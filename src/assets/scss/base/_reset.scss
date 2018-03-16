@@ -1,0 +1,23 @@
+@charset "utf-8";
+
+// 全局样式预设
+
+html {
+  -webkit-overflow-scrolling: touch;
+  -webkit-tap-highlight-color: transparent;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-family;
+  color: $font-color;
+  font-size: 14px;
+  line-height: 1.4;
+}
