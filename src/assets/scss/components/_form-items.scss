@@ -6,7 +6,7 @@
   border-radius: 0;
   padding-left: 5px;
   padding-right: 5px;
-  color: #444;
+  color: $title-color;
 
   &:focus {
     border-color: #45b1df;
@@ -21,7 +21,7 @@
   }
 }
 
-.dzy-input-scale .el-input__inner {
+.dzy-input-narrow .el-input__inner {
   height: 24px;
 }
 

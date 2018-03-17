@@ -71,18 +71,25 @@
 /**
  * 按钮 hover 效果 mixin
  * $colors 为当前及 hover 颜色定义
- * 顺序：边框色、背景色、文字色，然后是 hover 时再定义一次
+ * 顺序由外到内：边框色、背景色、文字色，然后是 hover 时再定义一次
  *
  */
 @mixin btn-define ($colors...) {
-  border-color: nth($colors, 1);
-  background-color: nth($colors, 2);
-  color: nth($colors, 3);
+  $_bdc-n: nth($colors, 1);
+  $_bgc-n: nth($colors, 2);
+  $_clr-n: nth($colors, 3);
+  $_bdc-h: nth($colors, 4);
+  $_bgc-h: nth($colors, 5);
+  $_clr-h: nth($colors, 6);
+
+  border-color: $_bdc-n;
+  background-color: $_bgc-n;
+  color: $_clr-n;
   font-weight: 700;
 
   &:hover {
-    border-color: nth($colors, 4);
-    background-color: nth($colors, 5);
-    color: nth($colors, 6);
+    @if $_bdc-n != $_bdc-h { border-color: $_bdc-h; }
+    @if $_bgc-n != $_bgc-h { background-color: $_bgc-h; }
+    color: $_clr-h;
   }
 }

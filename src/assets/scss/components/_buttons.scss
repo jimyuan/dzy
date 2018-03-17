@@ -9,32 +9,32 @@
 
 // 灰色普通按钮
 .btn-default {
-  @include btn-define(#ccc, #fff, #777, #adadad, #e6e6e6, #444);
+  @include btn-define(#ccc, #fff, $font-color, #adadad, #e6e6e6, $title-color);
 }
 // 紫边按钮
 .btn-sure {
-  @include btn-define(#4c00b2, #fff, #4c00b2, #4c00b2, #4c00b2,  #fff);
+  @include btn-define($c-primary, #fff, $c-primary, $c-primary, $c-primary,  #fff);
 }
 // hover 橘边按钮
 .btn-light {
-  @include btn-define(#ccc, #fff, #777, #fed492, #fffaf3, #f17913);
+  @include btn-define(#ccc, #fff, $font-color, #fed492, #fffaf3, #f17913);
   font-weight: bold;
 }
 // 橘色按钮
 .btn-highlight {
-  @include btn-define(#fd9800, #fd9800, #fff, #fdac32, #fdac32, #fff);
+  @include btn-define($c-info, $c-info, #fff, $c-info-light, $c-info-light, #fff);
 }
 // hover 蓝色按钮
 .btn-query {
-  @include btn-define(#ccc, #fff, #777, #45b1df, #e5f5fb, #337AB7);
+  @include btn-define(#ccc, #fff, $font-color, #45b1df, #e5f5fb, #337AB7);
 }
 // 灰色实心按钮
 .btn-solid {
-  @include btn-define(#e6e6e6, #e6e6e6, #444, #f7f7f7, #f7f7f7, #444);
+  @include btn-define(#e6e6e6, #e6e6e6, $title-color, #f7f7f7, #f7f7f7, $title-color);
 }
 // 紫色实心按钮
 .btn-solid-sure {
-  @include btn-define(#4c00b2, #4c00b2, #fff,#661acc, #661acc, #fff);
+  @include btn-define($c-primary, $c-primary, #fff, $c-primary-light, $c-primary-light, #fff);
 }
 
 // 大尺寸按钮

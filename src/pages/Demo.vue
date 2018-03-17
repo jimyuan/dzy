@@ -56,7 +56,7 @@
 
     <h3 class="el-icon-star-on"> 输入框样式</h3>
     <p>
-      <el-input size="mini" placeholder="请输入内容" class="dzy-input dzy-input-scale"></el-input>
+      <el-input size="mini" placeholder="请输入内容" class="dzy-input dzy-input-narrow"></el-input>
       <pre v-text="input.in1"></pre>
       <el-input size="mini" placeholder="请输入内容" class="dzy-input"></el-input>
       <pre v-text="input.in3"></pre>

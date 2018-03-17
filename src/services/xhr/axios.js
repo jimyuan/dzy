@@ -23,7 +23,7 @@ function goLogin () {
 /**
  * axios 全局 options
  */
-axios.defaults.baseURL = apiRoot.webAPI
+axios.defaults.baseURL = apiRoot().webAPI
 axios.defaults.withCredentials = false
 
 /**

@@ -18,7 +18,7 @@ export default new Vuex.Store({
       ls.set('token', data, { exp })
       state.token = data
     },
-    [types.LOGOUT]: (state) => {
+    [types.LOGOUT]: state => {
       [state.token, state.user] = [null, {}]
       ls.clear()
     },
