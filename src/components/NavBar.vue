@@ -1,6 +1,11 @@
 <template>
-  <header class="nav-bar">
-    <h1>header: (/components/NavBar.vue)</h1>
+  <header>
+    <div class="sub-nav">
+      <div class="container"></div>
+    </div>
+    <div class="main-nav">
+      <div class="container"></div>
+    </div>
   </header>
 </template>
 

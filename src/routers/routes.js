@@ -1,22 +1,32 @@
+import bailor from './bailor'
+import carrier from './carrier'
+import operator from './operator'
+
+const UI = () => import('PAGES/demo/UI')
+const Info = () => import('PAGES/demo/Info')
+const Filter = () => import('PAGES/demo/Filter')
 const Home = () => import(/* webpackChunkName: "home" */ 'PAGES/Home')
-const Demo = () => import(/* webpackChunkName: "demo" */ 'PAGES/Demo')
-const Info = () => import(/* webpackChunkName: "info" */ 'PAGES/Info')
+const User = () => import(/* webpackChunkName: "user" */ 'PAGES/User')
 
 export default [
+  { path: '/', redirect: '/home' },
+  // 首页
+  { path: '/home', component: Home },
+  // ui demo
+  { path: '/demo/ui', component: UI },
+  // ajax demo
+  { path: '/demo/info', component: Info },
+  // filter demo
+  { path: '/demo/filter', component: Filter },
+  // 委托方会员中心首页
   {
-    path: '/',
-    redirect: '/home'
-  }, {
-    // UI 例子
-    path: '/demo',
-    component: Demo
-  }, {
-    // Ajax 例子
-    path: '/info',
-    component: Info
-  }, {
-    // 首页
-    path: '/home',
-    component: Home
+    path: '/user',
+    component: User,
+    meta: { auth: true },
+    children: [
+      ...bailor,
+      ...carrier,
+      ...operator
+    ]
   }
 ]

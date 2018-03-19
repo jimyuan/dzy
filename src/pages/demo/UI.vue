@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main class="container">
     <h2>{{ msg }} (/pages/Demo.vue)</h2>
 
     <h3 class="el-icon-star-on"> 按钮样式</h3>
@@ -65,7 +65,7 @@
       <el-input size="mini" placeholder="请输入内容" class="dzy-input dzy-input-light"></el-input>
       <pre v-text="input.in2"></pre>
     </p>
-  </div>
+  </main>
 </template>
 
 <script>

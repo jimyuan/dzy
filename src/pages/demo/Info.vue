@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <main class="container">
     <h2 v-text="msg"></h2>
     <table class="table">
       <thead>
@@ -26,7 +26,7 @@
     </table>
     <el-button type="primary" size="small" plain  @click="fetchUser" v-text="fetchStatus"></el-button>
     <el-button size="small" plain @click="resetFetch">Reset</el-button>
-  </div>
+  </main>
 </template>
 
 <script>

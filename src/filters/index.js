@@ -3,5 +3,7 @@
  */
 import Vue from 'vue'
 import dateTimeFormatter from './dateTimeFormatter'
+import longDataFormatter from './longDataFormatter'
 
-Vue.filter('dateTimeFormatter', dateTimeFormatter)
+Vue.filter('dateFormat', dateTimeFormatter)
+Vue.filter('dataFormat', longDataFormatter)

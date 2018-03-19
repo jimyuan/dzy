@@ -2,7 +2,7 @@
   <section id="app">
     <nav-bar></nav-bar>
     <transition name="fade" mode="out-in">
-      <router-view class="child-view"></router-view>
+      <router-view></router-view>
     </transition>
     <foot-info></foot-info>
   </section>
