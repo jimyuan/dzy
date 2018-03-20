@@ -5,6 +5,7 @@
       <li><router-link to="/demo/ui">see UI demo</router-link></li>
       <li><router-link to="/demo/info">see Ajax demo</router-link></li>
       <li><router-link to="/demo/filter">see Filter demo</router-link></li>
+      <li><router-link to="/help">see help demo</router-link></li>
     </ul>
     <hr>
     <ul>
